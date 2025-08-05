@@ -7,43 +7,37 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background: #ffffff;
       font-family: sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
     }
 
     .embed-container {
-      width: 500px;
-      height: 300px;
-      border: 1px solid #ccc;
-      background: white;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      height: 150px;
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-
-    .clock-frame {
-      min-width: 200px;
-      min-height: 100px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background: #f4f4f4;
     }
   </style>
 </head>
 <body>
   <div class="embed-container">
-    <div class="cleanslate w24tz-current-time w24tz-small clock-frame">
-      <p>
-        <a href="//24timezones.com/Tokyo/zeit"
-           style="text-decoration: none; font-size: 16px;"
-           class="clock24"
-           id="tz24-1754339338-c1248-eyJob3VydHlwZSI6IjI0Iiwic2hvd2RhdGUiOiIxIiwic2hvd3NlY29uZHMiOiIwIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2ODkxMTgwYWU1OWVmIiwidHlwZSI6ImRiIiwibGFuZyI6ImRlIn0="
-           title="Tokyo Uhrzeit"
-           target="_blank"
-           rel="nofollow">Aktuelle Uhrzeit in Japan</a>
-      </p>
-      <div id="clock_block_cb6891180ae59ef"></div>
-    </div>
+    <a href="https://logwork.com/current-time-in-tokyo-japan"
+       class="clock-widget-text"
+       data-timezone="Asia/Tokyo"
+       data-language="de"
+       data-textcolor="#000000"
+       data-background="#5db5bd"
+       data-digitscolor="#000000">Japan</a>
+    <script src="https://cdn.logwork.com/widget/text.js"></script>
+  </div>
+</body>
+</html>
